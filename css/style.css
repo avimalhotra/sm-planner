@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/0edad32a7b5dadedff6cdc9529c91698?family=Majesti+Banner+Medium);
+
+*,::before,::after{margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+ul{ list-style: none; padding: 0;}
+img{ vertical-align: bottom;}
+button{ cursor: pointer; padding: 0; font: 16px var(--ff);}
+input,select{ font-family: var(--ff);}
+label{ display: inline-block;}
+iframe{ border: none; max-width: 100%; }
+
+
+html{ font-size: 15px; 
+    --ff: "Montserrat", sans-serif;
+    --f2: "Majesti Banner Medium", serif;
+    --green: #213532;
+    --gold:#e0c48f;
+    --lg:#10baae;
+ }
+
+body{ font: 14px var(--ff);}
+
+/* 12 grids */
+.container{ max-width: 1200px; margin: auto; padding: 0 1rem;}
+.row{ display: flex; flex-flow: row wrap; margin: 0 -1rem; }
+[class^="col-"]{ flex: 1 0 auto; padding: 0 1rem;}
+.col-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-2{ flex-basis: 16.66%; max-width: 16.66%;}
+.col-3{ flex-basis: 25%; max-width: 25%;}
+.col-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-5{ flex-basis: 41.66%; max-width: 41.66%;}
+.col-6{ flex-basis: 50%; max-width: 50%;}
+.col-7{ flex-basis: 58.33%; max-width: 58.33%;}
+.col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-9{ flex-basis: 75%; max-width: 75%;}
+.col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+.flex{ display: flex;}
+.justify-center{ justify-content: center;}
+.justify-space-bet{ justify-content: space-between;}
+.align-center{ align-items: center;}
+.img-resp{ max-width: 100%; height: auto;}
+.maj{ font-family: var(--f2);}
+
+
+/* layout */
+
+header{ background: var(--green); color: #fff; padding: 13px 0;}
+nav{ justify-content: right;}
+nav li{ margin-left: 22px;}
+nav a{ color: inherit; display: block; width: 146px; line-height: 39px; border: 3px solid; text-align: center; }
+nav a.active{ background: var(--lg); border-color: var(--lg); }
+nav a.last{ color: var(--gold); }
+
+
+.banner{ text-align: center; background: url(../img/bg1.webp) no-repeat center/cover; padding: 10rem 0; }
+.banner p{ font-size: 100px; line-height: 1.2; color: #fff;}
+.banner a{ display: inline-block; background: #fff; font-weight: bold; color: #516d69; width: 185px; line-height: 50px; }
+
+
+.wrap-3{ background: var(--green); color: var(--gold); font-size: 30px; line-height: 151px; text-align: center; text-transform: uppercase;}
+
+
+.wrap-4{ background: url(../img/bg2.webp) no-repeat #f0f0f2; padding: 70px 0; }
+h2{ font-size: 40px; line-height: 1.25; color: #436d67;}
+.wrap-4 a{ display: inline-block; font-weight: bold; color: #516d69; border: 3px solid; text-align: center; width: 185px; line-height: 50px; }
+.text{ color: #8f9092; font-size: 13px; line-height: 24px; }
+.wrap-4 p{ margin: 54px 0;}
+
+
+
+.wrap-5{ background: #fff; padding: 0 0 5rem; text-align: center;}
+h3{ color: #436d67; line-height: 1; font-size: 30px; margin: 2rem 0 1rem;}
+.wrap-5 .text{ text-align: left;}
+.wrap-5 img{ margin-top: 6rem;}
+
+
+.wrap-6{ padding: 4rem 0; background: #f0f0f2; text-align: center;}
+.wrap-6 p{ margin: 37px 0 42px;}
+
+
+.wrap-7{ background: var(--green); color: #c7c7c7; padding: 20px 0; text-align: center;}
+.wrap-7 li{ margin: 1rem;}
+.wrap-7 a{ color: inherit; font-size: 24px;}
+.nav a{ font-size: 13px;}
+.nav li{ margin: 0;}
+.nav a{ padding: 0 1rem;}
+.nav li:not(:first-child){ border-left: 1px solid;}
+
+
+.wrap-8{ background: #162724; color: #c7cccc; text-align: center; padding: 25px 0;}
+
+
+
+@media screen and (max-width:1220px){
+    html{ font-size: 14px;}
+    .banner{ padding: 6rem 0;}
+}
+
+
+
+@media screen and (max-width:980px){
+    .col-t-3{ flex-basis: 25%; max-width: 25%;}
+    .col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-t-6{ flex-basis: 50%; max-width: 50%;}
+    .col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-t-9{ flex-basis: 75%; max-width: 75%;}
+    .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .banner{ padding: 3rem 0;}
+}
+
+
+@media screen and (max-width:767px){
+    html{ font-size: 13px;}
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}        
+    header nav.flex{ display: none;}
+    .banner p{ font-size: 45px;}
+    .wrap-3{ line-height: 8rem ; font-size: 24px;}
+}
+    
+@media screen and (max-width:460px){
+    .col-p-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-p-6{ flex-basis: 50%; max-width: 50%;}
+    .col-p-12{ flex-basis: 100%; max-width: 100%;}
+    .banner{ padding: 2rem 0;}
+    .wrap-3{ line-height: 4rem ;}
+    iframe{ height: auto;}
+    .nav a{ padding: 0 5px;}
+    
+}
