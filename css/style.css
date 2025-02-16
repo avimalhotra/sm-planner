@@ -52,6 +52,8 @@ nav li{ margin-left: 22px;}
 nav a{ color: inherit; display: block; width: 146px; line-height: 39px; border: 3px solid; text-align: center; }
 nav a.active{ background: var(--lg); border-color: var(--lg); }
 nav a.last{ color: var(--gold); }
+header label, header input{ display: none;}
+
 
 
 .banner{ text-align: center; background: url(../img/bg1.webp) no-repeat center/cover; padding: 10rem 0; }
@@ -117,6 +119,14 @@ h3{ color: #436d67; line-height: 1; font-size: 30px; margin: 2rem 0 1rem;}
     header nav.flex{ display: none;}
     .banner p{ font-size: 45px;}
     .wrap-3{ line-height: 8rem ; font-size: 24px;}
+    header input[type="checkbox"]{ display: none;}
+    header label{ float: right; font-size: 3rem; color: #10baae;}
+    header input:checked ~ nav{ display: block;}
+    header nav{ background: var(--green); position: absolute; left: 0; right: 0; top: 120px; }
+    header ul.flex{ display: block; clear: both;}
+    header nav a{ width: 100%;}
+    header nav li{ margin-bottom: 20px; margin-left: 0;}
+    header label, header input{ display: inline-block;}
 }
     
 @media screen and (max-width:460px){
